@@ -81,7 +81,6 @@ class CICDUtil
     def init ()
     {
         
-
               
         def props = ['username':System.properties.'anypoint.user', 
                      'password': System.properties.'anypoint.password',
@@ -101,8 +100,7 @@ class CICDUtil
                      'apiImplUri':System.properties.'apiImplUri',
                      'apiProxyUri':System.properties.'apiProxyUri',
                      'isCloudHub':System.properties.'isCloudHub',
-                     'muleVersion4OrAbove':System.properties.'muleVersion4OrAbove',
-                     'apiType':System.properties.'apiType',
+                                          'apiType':System.properties.'apiType',
                      'deploymentType':System.properties.'deploymentType', 
                      'apiInstanceLabel':System.properties.'apiInstanceLabel'
                      ]
@@ -366,7 +364,7 @@ class CICDUtil
           request.endpoint.isCloudHub = false
         }
         
-        request.endpoint.muleVersion4OrAbove = props.muleVersion4OrAbove
+       // request.endpoint.muleVersion4OrAbove = props.muleVersion4OrAbove
         request.endpoint.type = props.apiType 
         request.endpoint.deploymentType = props.deploymentType
         request.instanceLabel = props.apiInstanceLabel
@@ -470,7 +468,7 @@ class CICDUtil
           def result = util.provisionAPIManager(props);
          
       
-         //util.persisteAPIDiscoveryDetail(props, result)
+         util.persisteAPIDiscoveryDetail(props, result)
           
          
 
