@@ -4,7 +4,7 @@
 
     <groupId>9cbfeea6-3931-4b24-b763-135be8eff827</groupId>
     <artifactId>customer-claims-sys-proxy-demo</artifactId>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
 
     <packaging>${packaging}</packaging>
     <name>customer-claims-sys-proxy-demo</name>
@@ -103,7 +103,7 @@
 					            <muleVersion>${app.runtime}</muleVersion>
 					            <username>${user}</username>
 					            <password>${password}</password>
-					            <applicationName>${artifact}-${env}</applicationName>
+					            <applicationName>${application}</applicationName>
 								<provider>${provider}</provider>
 								<properties>
 									<env>${env}</env>
@@ -116,7 +116,7 @@
 					            <deploymentSettings>
 					                <cpuReserved>${cpu}</cpuReserved>
 									<memoryReserved>${memory}</memoryReserved> 
-					                <publicUrl>${artifact}-${env}.${domainName}</publicUrl>
+					                <publicUrl>${application}.${domainName}</publicUrl>
 									<replicationFactor>${replicationFactor}</replicationFactor>
 									<clusteringEnabled>${clusteringEnabled}</clusteringEnabled>
 					            </deploymentSettings>
