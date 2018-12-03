@@ -4,7 +4,7 @@
 
     <groupId>9cbfeea6-3931-4b24-b763-135be8eff827</groupId>
     <artifactId>customer-claims-sys-proxy-demo</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.2</version>
 
     <packaging>${packaging}</packaging>
     <name>customer-claims-sys-proxy-demo</name>
