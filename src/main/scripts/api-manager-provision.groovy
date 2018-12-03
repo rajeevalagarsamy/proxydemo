@@ -81,27 +81,6 @@ class CICDUtil
     def init ()
     {
         
-     System.properties['anypoint.user'] = "rajeevnetrovert2"
-     System.properties['anypoint.password'] = "Login@123"
-     System.properties['orgId'] = "Netrovert"
-     System.properties['version'] = "v1"
-     System.properties['envId'] = "Sandbox"
-     System.properties['assetId'] = "cicdhellow"
-     System.properties['assetVersion'] = "1.0.0"
-     System.properties['clientIdEnforcementPolicy'] = false
-     System.properties['rateLimitPolicy'] = false
-     System.properties['oAuthPolicy'] = false
-     System.properties['timePeriod'] = "86400000"
-     System.properties['maxRequests'] = "2"
-     System.properties['scopes'] = "mule app cicd"
-     System.properties['tokenUrl'] = "https://oauthtoken.url.com"
-     System.properties['apiImplUri'] = "https://implementation.com/test"
-     System.properties['apiProxyUri'] = "null"
-     System.properties['isCloudHub'] = "null"
-     System.properties['muleVersion4OrAbove'] = true
-     System.properties['apiType'] = "http"
-     System.properties['deploymentType'] = "HY"
-     System.properties['apiInstanceLabel'] = "test-cicd"
 
               
         def props = ['username':System.properties.'anypoint.user', 
